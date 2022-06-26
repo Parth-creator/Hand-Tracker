@@ -66,12 +66,15 @@ try:
 except:
     import pip
     pip.main(['install', 'cvzone'])
-    print("INSTALLED CVZONE")
+    print("\nINSTALLED CVZONE\n")
     pip.main(['install', 'opencv-python'])
-    print("INSTALLED OPENCV")
-    from cvzone.HandTrackingModule import HandDetector
-    import cv2
-    import socket
+    print("\nINSTALLED OPENCV\n")
+    pip.main(['install', 'mediapipe'])
+    print("\nINSTALLED MEDIAPIPE \n")
+
+from cvzone.HandTrackingModule import HandDetector
+import cv2
+import socket
 
 
 cap = cv2.VideoCapture(0)
