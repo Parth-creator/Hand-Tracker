@@ -69,7 +69,7 @@ except:
     print("\nINSTALLED CVZONE\n")
     pip.main(['install', 'opencv-python'])
     print("\nINSTALLED OPENCV\n")
-    pip.main(['install', 'mediapipe'])
+    pip.main(['install', 'mediapipe==0.8.10'])
     print("\nINSTALLED MEDIAPIPE \n")
 
 from cvzone.HandTrackingModule import HandDetector
